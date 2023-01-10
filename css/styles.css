@@ -8,30 +8,34 @@
 .container{
     display: flex;
     flex-direction: column;
-   } 
-   
+} 
+
 .header , .section , .footer{
     background-color: black;
-  }
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+}
 
 .menu{
-    background-color: #2d4059;
-    display: flex;
+    background-color: #2d4059;  
+    display: flex; 
     flex-direction: row;
-    justify-content: space-between;
-   }
+}
 
 .logo, .nav, .social{
     background-color: #ea5455;
-   }
+}
 
 .logo, .social{
-    width: 15%;
-   }
+    flex:1 1 auto;
+}
 
 .nav{
-    width: 70%;
-   }
+    flex:5 1 auto;
+}
 
 .main-title{
     background-color:#f07b3f;
@@ -42,169 +46,79 @@ h1{
 }
 
 .section{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
 }
 
-.main{
+.articles{
     background-color:#4e4e6a;
-    width: 70%;
-    padding: initial;
+    flex: 2 1 auto;
     display: flex;
-    flex-direction: column;
-}
-
-.title, .text{
-    background-color: #1f6cb0;
-    width: 100%;
-    margin-left: 0px;  
-}
-
-.text{
-    margin-top: 20px;
-    margin-bottom: 10px;
+    flex-flow: row wrap;
 }
 
 .article{
-    width: 100%;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    background-color: #1f6cb0;
+    flex: 1 1 40%
 }
 
 .article-par{
     background-color:#70a3c4;
-    margin : 0px 20px 20px 20px;
-}
-
-.articles{
-    display: flex;
-    flex-direction: row;
-     margin:0px;
-    padding: 0px; 
+    flex: 1 1 100%;
 }
 
 .aside{
     background-color: #f73f52;
-    width: 30%;
+    flex: 1 1 auto;
 }
 
-aside>h3{
-    background-color: #feea85;
-   
-}
-
-aside>p{
-    background-color: #feea85; 
+.info{
+    background-color: #feea85;  
 }
 
 .footer-p{
     background-color: #e6af2e;
 }   
+
  
-@media (min-width: 768px) and (max-width: 1024px) {
-
+@media (max-width: 800px) {
     .section{
-        background-color: #feff03;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        padding-left: 20px;
-        padding-right: 20px;
+        background-color: #feff03;  
+        flex-direction: column;  
     }
-
-    .main , .aside{
-        padding: 0px;
-        width:100%
-    }
-
-    .article-par{
-        margin-top :0;
-    }
-    
-    .aside{
-        padding: 10px;
-    }
+   
 }
   
-@media (min-width: 320px) and (max-width: 767px) {
+@media  (max-width: 460px) {
+    .section{
+        background-color: #feff03;   
+    }
 
     .menu{
         flex-direction: column;
-        padding: 10px 15px; 
-        margin-bottom: 20px;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .logo, .nav, .social{
-        width:100%; 
-        padding: 10px;
-    } 
-
-    .section{
-        background-color: #feff03;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        padding: 10px 20px;
-    }
-
-    .main , .aside{
-        width:100%;
-        justify-content: center;
-        align-items: center;
     }
 
     .aside{
         background-color:#fd7b54 ;
     }
 
-    aside>h3{
-        background-color: #fdb36b;
-    }
-    
-    aside>p{
+    .info{
         background-color: #fdb36b;
     }
 
-    .main{
+    .articles{
         background-color:#09506f;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin: 10px 10px;
-        padding: 0 10px; 
+        flex-direction: column;
     }
 
     .title, .text{
         background-color: #61959c;
-        width: 100%;
-        margin-left: 0px;  
-    }
-
-    .articles{
-        flex-direction: column;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .article{
-        padding-top: 0px;
-        padding-bottom: 0px;
-        margin-top:10px;
     }
 
      .article-par{
         background-color: #a3ddcb;
-        width: 100%;
-       margin-top: 10px; 
+      
     } 
 
-} 
+}  
    
   
