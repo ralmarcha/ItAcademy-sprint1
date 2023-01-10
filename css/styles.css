@@ -20,12 +20,14 @@ background-color:#fd7b54;
     margin: 10px;
     padding:10px;
     box-sizing: border-box;
+    max-width: 1200px;
 }
 
-/* @media (min-width: 1025px) and (max-width: 1200px)  { */
-   /* .container{
-     
-    } */
+ @media (min-width: 1025px) { 
+    .container{
+     display: flex;
+     flex-direction: column;
+    } 
 
    .header , .section , .footer{
     background-color: black;
@@ -33,10 +35,20 @@ background-color:#fd7b54;
 
    .menu{
     background-color: #2d4059;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
    }
 
    .logo, .nav, .social{
     background-color: #ea5455;
+
+   }
+   .logo, .social{
+    width: 15%;
+   }
+   .nav{
+    width: 70%;
    }
 
     .main-title{
@@ -46,36 +58,58 @@ background-color:#fd7b54;
     h1{
     background-color:#fed460;
 }
-
-    .article{
+.section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ 
+}
+    .main{
     background-color:#4e4e6a;
+    width: 70%;
+    padding: initial;
+  
 }
 
     .title, .text{
     background-color: #1f6cb0;
+    width: 100%;
+    margin-left: 0px;
 }
-
-    .article-par{
+.article{
+    width: 100%;
+    margin: 0px;
+}
+       .article-par{
     background-color:#70a3c4;
+}
+.articles{
+    display: flex;
+    flex-direction: row;
+    margin: initial;
+    padding: initial;
 }
 
     .aside{
     background-color: #f73f52;
+    width: 30%;
 }
 
     aside>h3{
     background-color: #feea85;
+   
  }
 
     aside>p{
     background-color: #feea85;
+  
  }
 
     .footer-p{
     background-color: #e6af2e;
 }
     
-/* } */
+ } 
   
   
   
