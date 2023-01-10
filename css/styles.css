@@ -51,6 +51,8 @@ h1{
     background-color:#4e4e6a;
     width: 70%;
     padding: initial;
+    display: flex;
+    flex-direction: column;
 }
 
 .title, .text{
@@ -66,19 +68,20 @@ h1{
 
 .article{
     width: 100%;
-    margin: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .article-par{
     background-color:#70a3c4;
-    margin-bottom: 20px;
+    margin : 0px 20px 20px 20px;
 }
 
 .articles{
     display: flex;
     flex-direction: row;
-    margin: initial;
-    padding: initial;
+     margin:0px;
+    padding: 0px; 
 }
 
 .aside{
@@ -89,17 +92,15 @@ h1{
 aside>h3{
     background-color: #feea85;
    
- }
+}
 
 aside>p{
-    background-color: #feea85;
-  
- }
+    background-color: #feea85; 
+}
 
 .footer-p{
     background-color: #e6af2e;
-}
-    
+}   
  
 @media (min-width: 768px) and (max-width: 1024px) {
 
@@ -109,12 +110,15 @@ aside>p{
         justify-content: center;
         align-items: center;
         align-content: center;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .main , .aside{
-        padding: 0px 10px;
-        width:98%
+        padding: 0px;
+        width:100%
     }
+
     .article-par{
         margin-top :0;
     }
@@ -122,62 +126,85 @@ aside>p{
     .aside{
         padding: 10px;
     }
-  }
+}
   
-  @media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
 
     .menu{
         flex-direction: column;
-        padding: 10px 15px;
-     }
+        padding: 10px 15px; 
+        margin-bottom: 20px;
+        justify-content: center;
+        align-items: center;
+    }
 
-     .logo, .nav, .social{
-        width:98%;
-       margin-left: 0;
-     
-       }
-       .section{
+    .logo, .nav, .social{
+        width:100%; 
+        padding: 10px;
+    } 
+
+    .section{
         background-color: #feff03;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         align-content: center;
-        
+        padding: 10px 20px;
     }
+
+    .main , .aside{
+        width:100%;
+        justify-content: center;
+        align-items: center;
+    }
+
     .aside{
         background-color:#fd7b54 ;
-        width: 98%;
-        
     }
+
     aside>h3{
         background-color: #fdb36b;
-       
-     }
+    }
     
     aside>p{
         background-color: #fdb36b;
-      
-     }
-     .main{
-        background-color:#09506f;
-        width: 98%;
-        margin: 10px 10px;
-        padding: 0 10px;
     }
+
+    .main{
+        background-color:#09506f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 10px 10px;
+        padding: 0 10px; 
+    }
+
     .title, .text{
         background-color: #61959c;
         width: 100%;
         margin-left: 0px;  
     }
+
     .articles{
         flex-direction: column;
-    
+        width: 100%;
+        justify-content: center;
+        align-items: center;
     }
+
     .article{
         padding-top: 0px;
         padding-bottom: 0px;
-        margin-top:5px;
+        margin-top:10px;
     }
-  } 
+
+     .article-par{
+        background-color: #a3ddcb;
+        width: 100%;
+       margin-top: 10px; 
+    } 
+
+} 
    
   
